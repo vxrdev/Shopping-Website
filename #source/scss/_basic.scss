@@ -4,8 +4,14 @@ body{
 .wrapper{
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    overflow-y: hidden;
+    min-height: 100%;
 }
 .main{
     flex: 1 1 auto;
+}
+div[class$="__container"]{
+    max-width: 1780px;
+    margin: 0 auto;
+    padding: 0px 30px; 
 }

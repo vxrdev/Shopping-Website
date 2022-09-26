@@ -1,0 +1,31 @@
+.brand {
+    margin-bottom: 69px;
+    background: #EBD96B;
+
+    &__container {
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 61px 0px 54px 0px;
+    }
+
+    &__img {
+
+        & img{
+            max-width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 1163px) {
+        &__wrapper{
+            flex-direction: column;
+        }
+
+        &__img{
+            margin-bottom: 30px;
+        }
+    }
+}

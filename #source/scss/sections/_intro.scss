@@ -1,0 +1,203 @@
+.intro {
+    margin-top: 203.74px;
+    margin-bottom: 63px;
+
+    &__container {
+    }
+
+    &__wrapper {
+        background: #f4f6f5;
+        border-radius: 59px;
+        display: flex;
+        align-items: center;
+        padding: 68px 81px 0px 119px;
+    }
+
+    &__content {
+        margin-right: 43px;
+    }
+
+    &__title {
+        font-family: "Poppins", sans-serif;
+        max-width: 474px;
+        font-weight: 900;
+        font-size: 96px;
+        line-height: 120px;
+        color: #000000;
+        margin-bottom: 40px;
+
+        & span {
+            position: relative;
+            display: block;
+            z-index: 20;
+        }
+
+        & span:nth-child(1) {
+            &::before {
+                content: url("../../../img/white.png");
+                position: absolute;
+                left: -40px;
+                top: -10px;
+                z-index: -1;
+            }
+        }
+
+        & span:nth-child(2) {
+            &::before {
+                content: url("../../../img/yellow.png");
+                position: absolute;
+                left: -30px;
+                top: -10px;
+                z-index: -1;
+            }
+        }
+    }
+
+    &__subtitle {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 48px;
+        letter-spacing: -0.05em;
+        color: #191818;
+        margin-bottom: 32px;
+    }
+
+    &__links {
+        display: flex;
+        align-items: center;
+
+        & img {
+            margin-right: 34px;
+        }
+    }
+
+    &__button {
+        background: #000000;
+        border-radius: 10px;
+        font-family: "Poppins", sans-serif;
+        padding: 19px 40px;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 45px;
+        letter-spacing: -0.05em;
+        color: #ffffff;
+        display: inline-block;
+    }
+
+    &__img {
+        & img {
+            max-width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 1335px) {
+        &__wrapper {
+            flex-direction: column;
+        }
+
+        &__subtitle {
+            text-align: center;
+        }
+
+        &__title {
+            text-align: center;
+            max-width: none;
+
+            & span:nth-child(1) {
+                &::before {
+                    left: 60px;
+                    top: 0px;
+                }
+            }
+
+            & span:nth-child(2) {
+                &::before {
+                    left: 40px;
+                    top: 0px;
+                }
+            }
+        }
+
+        &__content {
+            margin-right: 0;
+        }
+
+        &__links {
+            justify-content: center;
+        }
+    }
+
+    @media screen and (max-width: 852px) {
+        &__title {
+            text-align: center;
+            max-width: none;
+
+            & span:nth-child(1) {
+                &::before {
+                    left: 50%;
+                    top: 0px;
+                    transform: translate(-50%, 0);
+                }
+            }
+
+            & span:nth-child(2) {
+                &::before {
+                    left: 50%;
+                    top: 0px;
+                    transform: translate(-50%, 0);
+                }
+            }
+        }
+        &__links{
+            flex-direction: column;
+            justify-content: center;
+
+            & img{
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    @media screen and (max-width: 693px) {
+        &__title {
+            font-size: 80px;
+        }
+
+        &__button {
+        }
+        &__title {
+            text-align: center;
+            max-width: none;
+
+            & span:nth-child(1) {
+                &::before {
+                    display: none;
+                }
+            }
+
+            & span:nth-child(2) {
+                &::before {
+                    display: none;
+                }
+            }
+        }
+        &__wrapper{
+            padding: 68px 81px 0px 81px;
+        }
+    }
+
+    @media screen and (max-width: 473px) {
+        &__title{
+            font-size: 50px;
+            line-height: 70px;
+        }
+        &__subtitle{
+            font-size: 28px;
+        }
+
+        &__button{
+            margin-bottom: 40px;
+        }
+    }
+}
